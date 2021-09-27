@@ -24,6 +24,26 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
+  <script language="javascript">
+    
+    function backgroundChange() {
+        document.body.className = "colorChange";
+    }
+    function revertChange() {
+         document.body.className = "undoColor"; 
+    } 
+          
+  </script>
+  
+  <style> 
+    
+    .colorChange section{
+          background-color : yellow;
+    }
+    .undoColor section{
+          background-color : white;
+    }
+  </style>
   
   
   
@@ -84,6 +104,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title col-12 col-md-9">
+              <button onclick="javascript:backgroundChange()">Change Background Color!</button>
+              <button onclick="javascript:revertChange()">Revert Background Color!</button>
                 <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>Featured Farm: Strawberry Hill USA</strong></h3>
                 <h4 class="mbr-section-subtitle align-center mbr-fonts-style mb-4 display-7"><strong>Joining us at Fall for Main Street will be Strawberry Hill USA. Strawberry Hill U.S.A. is the largest strawberry farm in SC with 115 acres. Peaches are still their primary crop with close to 1,000 acres in production. They have also ventured into growing summer squash, cucumbers, cantaloupes, beans, and PUMPKINS!</strong></h4>
                 
